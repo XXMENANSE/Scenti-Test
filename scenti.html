@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scenti — Mindful Candle Experience</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f3f3f3, #dcdcdc);
+      color: #333;
+    }
+    header {
+      background-color: #674ea7;
+      color: white;
+      padding: 3rem;
+      text-align: center;
+      border-bottom: 4px solid #fff;
+    }
+    h1 {
+      margin-bottom: 0.2rem;
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      color: #555;
+    }
+    .content {
+      padding: 3rem;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .audio-player {
+      margin: 2rem 0;
+    }
+    .audio-player button {
+      background-color: #674ea7;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    .audio-player button:hover {
+      background-color: #573b8a;
+    }
+    .audio-list {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .audio-list button {
+      padding: 10px;
+      background-color: #5c6bc0;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .audio-list button:hover {
+      background-color: #3f51b5;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: #777;
+    }
+    footer a {
+      color: #674ea7;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Scenti</h1>
+    <p>Your mindful candle ritual</p>
+  </header>
+
+  <div class="content">
+    <h2>Welcome to Your Moment of Calm 🌿</h2>
+    <p>Light your Scenti candle, breathe deeply, and press play below to begin your relaxation session. You deserve a break.</p>
+
+    <div class="audio-player">
+      <audio id="audio-player" controls>
+        <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_78b8f456a5.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <button onclick="document.getElementById('audio-player').play()">Play Relaxation Music</button>
+    </div>
+
+    <p>This guided audio includes gentle ambient music and breathing instructions to help you reconnect with your inner peace.</p>
+
+    <div class="audio-list">
+      <button onclick="document.getElementById('audio-player').src='https://cdn.pixabay.com/audio/2022/03/15/audio_78b8f456a5.mp3'; document.getElementById('audio-player').play()">Nature Sounds</button>
+      <button onclick="document.getElementById('audio-player').src='https://cdn.pixabay.com/audio/2022/04/05/audio_70b6ed8f2d.mp3'; document.getElementById('audio-player').play()">Calming Rain</button>
+      <button onclick="document.getElementById('audio-player').src='https://cdn.pixabay.com/audio/2022/03/18/audio_d44e0d7a1c.mp3'; document.getElementById('audio-player').play()">Gentle Waves</button>
+    </div>
+
+    <footer>
+      <p>© 2025 Scenti Co. | Handmade with care 💜</p>
+      <p>Follow us on <a href="https://twitter.com/scentico" target="_blank">Twitter</a> | <a href="https://www.instagram.com/scentico" target="_blank">Instagram</a></p>
+    </footer>
+  </div>
+</body>
+</html>
